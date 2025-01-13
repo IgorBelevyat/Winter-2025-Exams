@@ -1,10 +1,10 @@
 // Refactor following solution
 // Find key by value
 
-const find = (object, value) => {
-  for (const name in object) {
-    if (object[name] === value) {
-      return name;
+const find = (obj, value) => {
+  for (const [key, val] of Object.entries(obj)) {
+    if (object[val] === value) {
+      return key;
     } 
   }
   return undefined;
