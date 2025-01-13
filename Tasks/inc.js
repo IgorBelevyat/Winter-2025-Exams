@@ -4,7 +4,7 @@
 let inc_numbers = (obj) => {
   for (const [key, value] of Object.entries(obj)) {
     if (typeof value === 'number') {
-      obj[key] = obj[key] + 1;
+      obj[key] += 1;
     }
   }
   return obj;
