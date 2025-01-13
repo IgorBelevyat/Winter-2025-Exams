@@ -2,8 +2,8 @@
 // Increment all numbers in dictionary
 
 let inc_numbers = (obj) => {
-  for (key in obj) {
-    if (typeof obj[key] === 'number') {
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === 'number') {
       obj[key] = obj[key] + 1;
     }
   }
