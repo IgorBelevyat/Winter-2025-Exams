@@ -3,7 +3,7 @@
 
 const find = (obj, value) => {
   for (const [key, val] of Object.entries(obj)) {
-    if (object[val] === value) {
+    if (val === value) {
       return key;
     } 
   }
