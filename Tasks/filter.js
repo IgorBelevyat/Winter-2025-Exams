@@ -1,15 +1,15 @@
 // Refactor following solution
 // Filter array by type name
 
-Filter = (T, t) => {
-  remove = [];
-  for (C of T) {
-    x = T.indexOf(C);
+const Filter = (T, t) => {
+  let remove = [];
+  for (const C of T) {
+    const x = T.indexOf(C);
     if (typeof T[x] !== t) {
       remove.unshift(x);
     }
   }
-  for (x of remove) T.splice(x, 1);
+  for (const x of remove) T.splice(x, 1);
   return T;
 };
 
