@@ -3,7 +3,7 @@
 
 let inc_numbers = (obj) => {
   for (key in obj) {
-    if ((typeof obj[key]).charAt(0).toUpperCase() === 'N') {
+    if (typeof obj[key] === 'number') {
       obj[key] = obj[key] + 1;
     }
   }
