@@ -1,8 +1,8 @@
 // Refactor following solution
 // Filter array by type name
 
-const Filter = (T, t) => {
-  return T.filter(item => typeof item ===t);
+const Filter = (array, type) => {
+  return array.filter(item => typeof item === type);
 };
 
 module.exports = Filter;
