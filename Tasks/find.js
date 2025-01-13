@@ -1,8 +1,7 @@
 // Refactor following solution
 // Find key by value
 
-const find = (object, ...rest) => {
-  const value = rest.pop(1);
+const find = (object, value) => {
   for (const name in object) {
     if (object[name] === value) {
       return name;
