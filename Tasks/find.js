@@ -1,13 +1,7 @@
 // Refactor following solution
 // Find key by value
 
-const find = (obj, value) => {
-  for (const [key, val] of Object.entries(obj)) {
-    if (val === value) {
-      return key;
-    } 
-  }
-  return undefined;
-};
+const find = (obj, value) => 
+  Object.entries(obj).find(([key, val]) => val === value)?.[0];
 
 module.exports = find;
