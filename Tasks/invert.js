@@ -3,11 +3,10 @@
 
 const invert = (arr) => {
   const reversed = [];
-  T = Object.keys(arr);
-  T.forEach((_, i) => {
-    T[i] = arr.pop();
-  });
-  return T;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed;
 };
 
 module.exports = invert;
