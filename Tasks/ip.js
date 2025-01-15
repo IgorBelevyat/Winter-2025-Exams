@@ -11,10 +11,10 @@ const Parseip = (input) => {
   for (const part of parts) {
     const num = parseInt(part, 10);
     if (isNaN(num) || num <0 || num > 255) return;
-    result.push (num)
+    result.push (num);
   }
 
-  return result;
+  return result.includes(undefined) ? undefined : result;
 };
 
 module.exports = Parseip;
