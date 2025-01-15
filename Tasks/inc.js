@@ -3,7 +3,7 @@
 
 const inc_numbers = (obj) => {
   for (const [key, value] of Object.entries(obj)) {
-    if (typeof value === 'number') {
+    if (typeof value === "number") {
       obj[key] += 1;
     }
   }
